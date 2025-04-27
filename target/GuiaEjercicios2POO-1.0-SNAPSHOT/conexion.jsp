@@ -17,6 +17,7 @@ Fecha:24/4/2025
         conexion = DriverManager.getConnection("jdbc:mysql://localhost/car_clean", "root", "");
         out.println("Conexion exitosa");
 
+
     } catch (Exception e) {
         out.println("Error de conexión: " + e.getMessage());
     } finally {
