@@ -1,0 +1,125 @@
+/*// Creado por: Salvador José Garía Ruiz
+//Carnet: GR230183*/
+body {
+    background-color: #2b2b2b;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.formu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #3b3b3b;
+    padding: 30px;
+    border-radius: 30px;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: fuchsia;
+}
+
+input[type="text"],
+input[type="email"]{
+    min-width: 97%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #2b2b2b;
+}
+
+
+.cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 15px;
+    border: none;
+    background-color: fuchsia;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+.btn {
+    margin: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: fuchsia;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: purple;
+}
+
+.errores {
+    max-width: 700px;
+    margin: 20px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    color: #e74c3c;
+}
+
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #D4C9BE;
+    text-align: center;
+}
+
+table th {
+    background-color: purple;
+    color: white;
+}
+
+.listado{
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #3b3b3b;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}

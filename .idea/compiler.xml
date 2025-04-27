@@ -9,8 +9,5 @@
         <module name="GuiaEjercicios2POO" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="GuiaEjercicios2POO" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
