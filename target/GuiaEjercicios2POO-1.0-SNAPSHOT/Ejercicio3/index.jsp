@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <h2>Agregar Contacto</h2>
-    <form action="contacts" method="post" class="form">
+    <form action="${pageContext.request.contextPath}/contacts" method="post" class="form">
         <input type="hidden" name="action" value="add"/>
         <label for="name">Nombre:</label>
         <input type="text" name="name" id="name" required value="<%= request.getAttribute("name") != null ? request.getAttribute("name") : "" %>"/><br/>

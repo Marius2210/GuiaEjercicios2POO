@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicio1;
 // Creado por: Salvador José Garía Ruiz
 //Carnet: GR230183
 public class Estudiante {

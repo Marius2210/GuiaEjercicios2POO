@@ -29,7 +29,7 @@ public class ContactServlet extends HttpServlet {
             }
         } catch (Exception e) {
             request.setAttribute("error", "Error al procesar la solicitud: " + e.getMessage());
-            request.getRequestDispatcher("/Ejercicio3/result.jsp").forward(request, response);
+            request.getRequestDispatcher("/ejercicio3/result.jsp").forward(request, response);
         }
     }
 
@@ -42,25 +42,25 @@ public class ContactServlet extends HttpServlet {
         //Validaciones
         if (name.isEmpty() || phone.isEmpty() || email.isEmpty()) {
             request.setAttribute("error", "Todos los campos son obligatorios.");
-            request.getRequestDispatcher("/Ejercicio3/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/ejercicio3/index.jsp").forward(request, response);
             return;
         }
 
         if (!name.matches("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+$")) {
             request.setAttribute("error", "El nombre solo puede contener letras y espacios.");
-            request.getRequestDispatcher("/Ejercicio3/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/ejercicio3/index.jsp").forward(request, response);
             return;
         }
 
         if (!phone.matches("^\\d{7,15}$")) {
             request.setAttribute("error", "El teléfono debe contener solo números (entre 7 y 15 dígitos).");
-            request.getRequestDispatcher("/Ejercicio3/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/ejercicio3/index.jsp").forward(request, response);
             return;
         }
 
         if (!email.matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$")) {
             request.setAttribute("error", "El correo electrónico no tiene un formato válido.");
-            request.getRequestDispatcher("/Ejercicio3/index.jsp").forward(request, response);
+            request.getRequestDispatcher("/ejercicio3/index.jsp").forward(request, response);
             return;
         }
 
@@ -77,7 +77,7 @@ public class ContactServlet extends HttpServlet {
             request.setAttribute("error", "Error al guardar el contacto: " + e.getMessage());
         }
 
-        request.getRequestDispatcher("/Ejercicio3/result.jsp").forward(request, response);  // Hacemos forward a result.jsp para mostrar mensaje de éxito
+        request.getRequestDispatcher("/ejercicio3/result.jsp").forward(request, response);  // Hacemos forward a result.jsp para mostrar mensaje de éxito
     }
 
     //Busqueda de contactos
@@ -109,7 +109,7 @@ public class ContactServlet extends HttpServlet {
         }
 
 
-        request.getRequestDispatcher("/Ejercicio3/result.jsp").forward(request, response);
+        request.getRequestDispatcher("/ejercicio3/result.jsp").forward(request, response);
     }
 
     //Mostrar todos los contactos
@@ -134,6 +134,6 @@ public class ContactServlet extends HttpServlet {
         }
 
         request.setAttribute("contactList", contactList);
-        request.getRequestDispatcher("/Ejercicio3/list.jsp").forward(request, response);
+        request.getRequestDispatcher("/ejercicio3/list.jsp").forward(request, response);
     }
 }
