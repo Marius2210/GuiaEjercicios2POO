@@ -40,4 +40,3 @@ Descripción: Formulario para capturar datos del empleado y calcular vacaciones.
 </form>
 </body>
 </html>
-
